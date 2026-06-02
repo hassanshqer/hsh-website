@@ -256,6 +256,29 @@ footer{
         padding:50px 6%;
     }
 }
+    .hsh-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.hsh-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.hsh-card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.hsh-card p{
+    margin:0;
+}
 </style>
 </head>
 
@@ -345,7 +368,34 @@ footer{
         <h2>Waarom kiezen voor HSH?</h2>
         <p>Betrouwbare schoonmaak voor bedrijven, scholen en zorginstellingen.</p>
     </div>
+
+    <div class="hsh-grid">
+        <div class="hsh-card">
+            <h3>🏢 Bedrijven</h3>
+            <p>Professionele schoonmaak voor kantoren en bedrijven.</p>
+        </div>
+
+        <div class="hsh-card">
+            <h3>🏫 Scholen</h3>
+            <p>Een schone en veilige omgeving voor leerlingen en personeel.</p>
+        </div>
+
+        <div class="hsh-card">
+            <h3>🏥 Zorginstellingen</h3>
+            <p>Hygiënische schoonmaak met aandacht voor kwaliteit.</p>
+        </div>
+
+        <div class="hsh-card">
+            <h3>⭐ Betrouwbaar</h3>
+            <p>Duidelijke afspraken en een professionele aanpak.</p>
+        </div>
+    </div>
 </section>
+    
+
+        
+    
+
 <section id="contact" class="contact">
     <h2>Neem contact op</h2>
     <p>Wilt u een schone en professionele werkomgeving?</p>
