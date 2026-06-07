@@ -408,6 +408,41 @@ nav a{
     text-align:center;
     margin:40px 0;
 }
+   @media(max-width:768px){
+    .menu-toggle{
+        display:block !important;
+        font-size:34px;
+        cursor:pointer;
+        color:#123c69;
+        margin-left:auto;
+    }
+
+    .nav-links{
+        position:fixed !important;
+        top:0;
+        right:-280px !important;
+        width:280px;
+        height:100vh;
+        background:white;
+        display:flex !important;
+        flex-direction:column !important;
+        padding:90px 30px;
+        gap:25px;
+        z-index:99999;
+        box-shadow:-5px 0 20px rgba(0,0,0,0.2);
+        transition:0.3s;
+    }
+
+    .nav-links.active{
+        right:0 !important;
+    }
+
+    .nav-links a{
+        display:block !important;
+        margin:0 !important;
+        font-size:22px !important;
+    }
+} 
 </style>
 </head>
 <body>
