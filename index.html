@@ -250,12 +250,25 @@ nav{
     
 
 
-nav div:last-child{
+ .nav-links{
     display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
+    position:fixed;
+    top:0;
+    right:-280px;
+    width:280px;
+    height:100vh;
+    background:white;
+    flex-direction:column;
+    padding:80px 30px;
+    gap:25px;
+    transition:0.3s;
+    z-index:99999;
 }
+
+.nav-links.active{
+    right:0;
+}
+
 
 nav a{
     margin:0;
