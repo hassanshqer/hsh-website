@@ -443,6 +443,23 @@ nav a{
         font-size:22px !important;
     }
 } 
+    @media(max-width:768px){
+    nav{
+        display:flex !important;
+        flex-direction:row !important;
+        justify-content:space-between !important;
+        align-items:center !important;
+    }
+
+    .nav-links{
+        transform:translateX(100%) !important;
+    }
+
+    .nav-links.active{
+        transform:translateX(0) !important;
+        right:0 !important;
+    }
+}
 </style>
 </head>
 <body>
