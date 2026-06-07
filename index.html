@@ -461,6 +461,41 @@ font-size:32px;
         right:0 !important;
     }
 }
+    .nav-links.active{
+    transform:translateX(0);
+    right:0 !important;
+}
+}
+
+/* Animation */
+section,
+.hero,
+.review-card,
+.service-card,
+.contact,
+footer{
+    animation:fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    transition:0.3s ease;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
 </style>
 </head>
 <body>
