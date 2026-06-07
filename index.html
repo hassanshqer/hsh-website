@@ -776,7 +776,7 @@ document.querySelectorAll("#navLinks a").forEach(function(link) {
 });
 
 function revealOnScroll() {
-    document.querySelectorAll("section, .card, .about-box").forEach(function(el) {
+    document.querySelectorAll("section, .card, .about-box, .hsh-card").forEach(function(el) {
         el.classList.add("reveal");
 
         if (el.getBoundingClientRect().top < window.innerHeight - 100) {
