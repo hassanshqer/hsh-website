@@ -261,7 +261,23 @@ nav a{
     margin:0;
     font-size:14px;
 }
+.menu-toggle{
+    display:block;
+    font-size:32px;
+    cursor:pointer;
+}
 
+.nav-links{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    text-align:center;
+}
+
+.nav-links.active{
+    display:flex;
+}
+    
 
     margin:0 10px;
     font-size:14px;
@@ -384,11 +400,17 @@ nav a{
         
     
 </div>
-    <div>
-        <a href="#diensten">Diensten</a>
-        <a href="#over">Over ons</a>
-        <a href="#contact">Contact</a>
-    </div>
+   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<div class="nav-links" id="navLinks">
+    <a href="#diensten">Diensten</a>
+    <a href="#over">Over ons</a>
+    <a href="#contact">Contact</a>
+</div> 
+    
+        
+   
+    
 </nav>
 
 <header class="hero">
@@ -587,5 +609,10 @@ nav a{
 <a cl<a class="whatsapp-float" href="https://wa.me/31641883982" target="_blank">
     💬
 </a>
+   <script>
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script> 
 </body>
 </html>
