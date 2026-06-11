@@ -460,7 +460,16 @@ font-size:32px;
         transform:translateX(0) !important;
         right:0 !important;
     }
+.nav-links a{
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+.nav-links.closing a{
+    opacity: 0;
+    transform: translateY(10px);
+}
+    }
+    
     
 
 /* Animation */
@@ -749,7 +758,18 @@ document.querySelectorAll("#navLinks a").forEach(function(link) {
     });
 });
 function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
+    const menu = document.getElementById("navLinks");
+
+    if (menu.classList.contains("active")) {
+        menu.classList.add("closing");
+
+        setTimeout(() => {
+            menu.classList.remove("active");
+            menu.classList.remove("closing");
+        }, 300);
+    } else {
+        menu.classList.add("active");
+    }
 }
 
 document.addEventListener("click", function(e) {
